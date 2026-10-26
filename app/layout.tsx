@@ -14,6 +14,7 @@ import BookSheet from '@/components/BookSheet';
 import { BASE } from '@/lib/data';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://thepeerscollective.github.io'),
   title: { default: 'DAKDAK · korean fried chicken + soju bar, paris 10', template: '%s · DAKDAK' },
   description: 'korean fried chicken, cold soju and too much gochujang. 8 rue du coq, paris 10. open till 2am.',
   icons: { icon: `${BASE}/favicon.svg` },

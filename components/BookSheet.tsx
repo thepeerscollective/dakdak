@@ -150,7 +150,7 @@ export default function BookSheet() {
                   <div className="dot" style={{ fontSize: 110, lineHeight: 1 }}>{chosen?.full ? '--' : done.table}</div>
                 </div>
                 <div className="caption" style={{ lineHeight: 1.9 }}>
-                  {chosen?.date} · {round}<br />{people} {people === '1' ? 'PERSON' : 'PEOPLE'} · {round === '19:00' ? 'ROUND ONE' : 'ROUND TWO'}<br />NAME: {name.toUpperCase()}
+                  {chosen?.date}<br />{round} · {round === '19:00' ? 'ROUND ONE' : 'ROUND TWO'}<br />{people} {people === '1' ? 'PERSON' : 'PEOPLE'}<br />{name.toUpperCase()}
                 </div>
               </div>
               <div style={{ borderTop: '1px dashed var(--ink)', marginTop: 18, paddingTop: 12, fontSize: 14 }}>

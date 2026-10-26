@@ -28,7 +28,7 @@
   color-scheme: dark;
 }
 html[data-sauce='soy-garlic'] { --accent: #c9822b; --accent-dark: #4a2e10; --accent-small: #d99a4e; }
-html[data-sauce='yangnyeom'] { --accent: #d7261e; --accent-dark: #4a0d0a; --accent-small: #efe6d6; }
+html[data-sauce='yangnyeom'] { --accent: #ff4a3d; --accent-dark: #4a0d0a; --accent-small: #ff4a3d; }
 html[data-sauce='snow-cheese'] { --accent: #efe6d6; --accent-dark: #4a453c; --accent-small: #efe6d6; }
 
 @media (max-width: 820px) {
@@ -138,7 +138,10 @@ legend { padding: 0; margin-bottom: 10px; }
 .nav .toggle { display: none; }
 .nav-bg { position: absolute; inset: 0 0 auto 0; height: 96px; background: linear-gradient(var(--ink) 40%, transparent); opacity: 0; transition: opacity 0.3s; }
 .nav[data-scrolled] .nav-bg { opacity: 1; }
-@media (max-width: 1100px) { .nav .links, .nav .clock { display: none; } .nav .pills { margin-left: auto; } }
+@media (max-width: 1100px) {
+  .nav .links, .nav .clock { display: none; }
+  .nav .toggle { display: grid; place-items: center; width: 48px; height: 48px; border-radius: 50%; background: var(--rice); pointer-events: auto; margin-left: auto; }
+}
 @media (max-width: 820px) {
   .nav-in { padding-top: 14px; gap: 10px; }
   .nav-bg { height: 72px; background: var(--ink); opacity: 1; }

@@ -11,11 +11,12 @@
 @keyframes swing { 0%, 100% { transform: rotate(8deg); } 50% { transform: rotate(3deg); } }
 .hero-side { padding-top: 10px; }
 .rail { position: absolute; right: 8px; top: 470px; white-space: nowrap; writing-mode: vertical-rl; margin: 0; font-size: 22px; letter-spacing: 0.06em; }
-@media (max-width: 1100px) { .hero { grid-template-columns: 1fr; gap: 40px; } .rail { display: none; } .drumstick { bottom: -4%; } }
+@media (max-width: 1100px) { .hero { grid-template-columns: 1fr; gap: 40px; } .rail { display: none; } .hero-sign { width: max-content; max-width: 100%; } .drumstick { bottom: -6%; right: -4%; } }
 @media (max-width: 820px) {
   .hero { padding-top: 92px; }
   .sign { font-size: 46vw; }
-  .drumstick { height: 26vw; right: 2px; bottom: 2%; }
+  .hero-sign { width: auto; }
+  .drumstick { height: 24vw; right: 0; bottom: 26%; }
 }
 
 .now { display: grid; justify-items: center; gap: 8px; padding: 26px 20px 22px; text-align: center; }
